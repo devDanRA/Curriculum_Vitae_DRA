@@ -1,3 +1,4 @@
+/*Estilos generales*/
 *{
     margin: 0;
     padding: 0;
@@ -14,36 +15,89 @@ body{
     height: 100vh;
 }
 h1,h2,h3{
-    font-weight: 400;
-    color: #E6E9EC;
+    font-weight: 600;
+    color: #000000;
+    text-shadow: 1px 1px 1px  #E6E9EC;
     font-size: 2.5rem;
     text-align: center;
+    margin: 5px;
 }
 p{
-    color: #E6E9EC;
-    font-size: 1.6rem;
+    margin: 5px;
+    color: #000000;
+    font-size: 2.0rem;
     text-align: center;
 }
+/******************************************************************************
+***********************Cabecera************************************************/
 header{
     flex: 1fr;
     min-height: 100vh;
-    width: 100%;
     background: url('../assets/hero.jpg') no-repeat center center/cover;
 }
 .grid_header{
-    
     min-height: 100vh;
-    background-color: #0449989b;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,1fr);
-    gap: 1rem;
-    margin: 0 auto;
+    grid-template-rows: 1fr 20%;
 }
+/*Presenttación*/
 .hero{
+    border: 3px solid #0dff00;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.logo{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.resumen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 3px;
+}
+.lema{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+}
+.lema h3{
+    font-size: 1.8rem;
+    text-transform: lowercase;
+    font-style: italic;
+    color:#044998
+}
+.lema img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 5px;
+}
+/*Barra de navegación*/
+
+/*************************************************************************************
+**********************Contenido******************************************************/
+/*Estilos en el contenido*/
+
+/*Sobre mi*/
+
+/*Portfolio*/
+
+/*Solicitud de contacto*/
+
+/*Contacto*/
 
