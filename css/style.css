@@ -72,7 +72,7 @@ header{
     padding: 10px;
 }
 
-/*Barra de navegación y logo*/
+/*Barra de navegación*/
 .log-nav{
     display: flex;
     justify-content: space-between;
@@ -80,27 +80,6 @@ header{
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: 500;
-}
-.logo{
-    margin: 20px;
-    display: flex;
-    align-self: self-start;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
-    width: 4.5rem;
-    height: 4.5rem;
-    border-radius: 25px;
-    background-color: #000000;
-    transition: all .2s ease-in-out;
-}
-.logo h5{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-size: 2.5rem;
-    color: black;
-    text-shadow: 1px 1px 1px  #fffdfdf4;
 }
 nav ul{
     margin: 20px;
