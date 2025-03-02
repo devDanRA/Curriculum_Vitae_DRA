@@ -21,6 +21,7 @@ h1,h2,h3,h5{
     text-shadow: 1px 1px 1px  #0000006c;
     text-align: center;
     margin: 10px;
+    font-style: italic;
 }
 p{
     margin: 5px;
@@ -40,11 +41,12 @@ header{
     min-height: 100vh;
     display: grid;
     grid-template-columns:1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40% 1fr;
 }
 /*Presentación*/
 
 .hero{
+    border: 1px solid rgb(96, 17, 17);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,14 +55,14 @@ header{
 .profile{
     max-width: 15rem;
     max-height: 20rem;
-    border-radius: 10px;
+    border-radius: 100px;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
 }
 .profile img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 .resumen{
     display: flex;
@@ -73,8 +75,12 @@ header{
 }
 
 /*Barra de navegación*/
-.nav ul{
-    border: 1px solid rgb(96, 17, 17);
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -82,12 +88,12 @@ header{
     align-items: center;
     list-style: none;
 }
-.nav ul li{
+nav ul li{
     padding: 5px;
     margin: 10px;
     list-style: none;
 }
-.nav ul li a{
+nav  ul li a{
     text-align: justify;
     text-decoration: none;
     color:rgb(96, 17, 17);
@@ -95,10 +101,10 @@ header{
     font-weight: 500;
     transition: all .3s ease-in-out;
 }
-.nav ul li a:hover{
+nav ul li a:hover{
     text-decoration:overline;
 }
-.nav ul li a:active{
+nav ul li a:active{
     text-decoration:overline;
 }
 /*************************************************************************************
@@ -114,3 +120,10 @@ header{
 /*Contacto*/
 
 /*************************Footer******************************/
+footer{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/foot.webp') no-repeat center center/cover;
+    min-height: 100vh;
+    display: grid;
+    grid 
+
+}
