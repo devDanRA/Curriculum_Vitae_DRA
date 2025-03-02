@@ -34,7 +34,7 @@ a{
 header{
     flex: 1fr;
     min-height: 100vh;
-    background: url('../assets/hero.jpg') no-repeat center center/cover;
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/home.webp') no-repeat center center/cover;
 }
 .grid_header{
     min-height: 100vh;
