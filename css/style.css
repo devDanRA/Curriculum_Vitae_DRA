@@ -26,10 +26,6 @@ p{
     font-size: 2.0rem;
     text-align: center;
 }
-a{
-    color: rgb(96, 17, 17);
-    text-decoration: none;
-}
 /******************************************************************************
 ***********************Cabecera************************************************/
 header{
@@ -90,7 +86,7 @@ header{
 .nav ul li a{
     text-align: justify;
     text-decoration: none;
-    color: #ffffff;
+    color:rgb(96, 17, 17);
     font-size: 1.5rem;
     font-weight: 500;
     transition: all .3s ease-in-out;
