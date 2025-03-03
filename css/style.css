@@ -18,9 +18,7 @@ body{
 h1,h2,h3,h5{
     font-weight: 600;
     color: rgb(96, 17, 17);
-    text-shadow: 1px 1px 1px  #0000006c;
     text-align: center;
-    margin: 10px;
     font-style: italic;
 }
 p{
@@ -108,7 +106,45 @@ nav ul li a:active{
 }
 /*************************************************************************************
 **********************Contenido******************************************************/
-/*Estilos en el contenido*/
+/*index*/
+.grid_main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+section{
+    min-height: 100vh;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #ffffffc5;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.tarjeta p{
+    text-align: justify;
+}
+/*index_experiencia*/
+.experiencia{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experiencia h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #400000;
+}
 
 /*Sobre mi*/
 
@@ -181,7 +217,7 @@ footer{
     font-size: 1.5rem;
     font-weight: 500;
 }
-.contenido{
+.content_footer{
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -189,22 +225,22 @@ footer{
     flex-wrap: wrap;
     padding: 5px;
 }
-.contenido p{
+.content_footer p{
     font-size: 1.3rem;
     font-weight: 500;
 }
-.contenido a{
+.content_footer a{
     text-decoration: none;
     color: rgb(96, 17, 17);
     font-size: 1.3rem;
     font-weight: 500;
     transition: all .3s ease-in-out;
 }
-.contenido a:hover{
+.content_footer a:hover{
     text-decoration: underline;
     transform: scale(1.1) translateX(10px);
 }
-.contenido_img{
+.content_img_footer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -218,7 +254,7 @@ footer{
     width: 60px;
     height: 60px;
 }
-.contenido_img a:hover{
+.content_img_footer a:hover{
     transform: scale(1.2) ;
 }
 
