@@ -143,14 +143,26 @@ footer{
     text-shadow: 1px 1px 1px  #0000006c;
 }
 
-/*seccion 1 footer*/
+/*seccion 2 footer*/
 .redes_sociales{
     border: 1px solid rgb(96, 17, 17);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 5px;
+    padding: 10px;
 }
-/*seccion 1 footer*/
+.redes_sociales img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+}
+/*seccion 3 footer*/
 .copy{
     border: 1px solid rgb(96, 17, 17);
     display: flex;
@@ -161,7 +173,7 @@ footer{
     font-weight: 500;
     text-shadow: 1px 1px 1px  #0000006c;
 }
-
+/*contenido_footer*/
 .titulo h3{
     font-size: 1.5rem;
     font-weight: 500;
@@ -188,3 +200,20 @@ footer{
     text-decoration: underline;
     transform: scale(1.1) translateX(10px);
 }
+.contenido_img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+.size_img{
+    width: 60px;
+    height: 60px;
+}
+.contenido_img a:hover{
+    transform: scale(1.2) ;
+}
+
+/*seccion 2 footer*/
