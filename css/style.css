@@ -122,19 +122,25 @@ nav ul li a:active{
 /*************************Footer******************************/
 footer{
     background: url('../assets/Fondo-floral-de-color-verde-y-rojo/foot.webp') no-repeat center center/cover;
-    min-height: 100vh;
+    min-height: 1fr;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
 }
 /*seccion 1 footer*/
 .contacto{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     border: 1px solid rgb(96, 17, 17);
 }
+.contacto h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px  #0000006c;
+}
+
 /*seccion 1 footer*/
 .redes_sociales{
     border: 1px solid rgb(96, 17, 17);
@@ -154,3 +160,11 @@ footer{
     text-shadow: 1px 1px 1px  #0000006c;
 }
 
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
