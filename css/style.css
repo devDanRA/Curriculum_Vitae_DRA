@@ -145,7 +145,17 @@ section{
     font-weight: 500;
     color: #400000;
 }
-
+/*index_tecnologias*/
+.tecnologias{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/1.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*Sobre mi*/
 
 /*Portfolio*/
