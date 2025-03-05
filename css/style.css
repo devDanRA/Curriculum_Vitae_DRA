@@ -111,7 +111,6 @@ nav ul li a:active{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
 }
 section{
     min-height: 100vh;
@@ -121,7 +120,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     padding: 10px;
     background-color: #ffffffc5;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -130,7 +129,7 @@ section{
     text-align: justify;
 }
 /*index_experiencia*/
-.experiencia, .tecnologias{
+.experiencia, .tecnologias, .habilidades{
     background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -140,7 +139,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-.experiencia h3,.tecnologias h3{
+.experiencia h3,.tecnologias h3, .habilidades h3{
     font-size: 2.5rem;
     font-weight: 500;
     color: #400000;
@@ -148,7 +147,32 @@ section{
 /*index_tecnologias*/
 .tecnologias{
     background: url('../assets/Fondo-floral-de-color-verde-y-rojo/1.png') no-repeat center center/cover;
-    
+}
+.tecnologias .contenido ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: justify;
+    flex-wrap: wrap;
+    gap: 15px;
+} 
+.tecnologias .contenido ul li, .habilidades .contenido ul li:hover{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #400000;
+    transition: all .3s ease-in-out;
+}
+.tecnologias .contenido ul li:hover{
+    transform:translateX(10px);
+}
+/*index_habilidades*/
+.habilidades{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
+}
+.habilidades .contenido ul li:hover{
+    transform:translateX(10px);
 }
 /*Sobre mi*/
 
