@@ -130,7 +130,7 @@ section{
     text-align: justify;
 }
 /*index_experiencia*/
-.experiencia{
+.experiencia, .tecnologias{
     background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -140,14 +140,15 @@ section{
     justify-content: center;
     align-items: center;
 }
-.experiencia h3{
+.experiencia h3,.tecnologias h3{
     font-size: 2.5rem;
     font-weight: 500;
     color: #400000;
 }
 /*index_tecnologias*/
-.tecnologia{
-    border: 1px solid #400000;
+.tecnologias{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/1.png') no-repeat center center/cover;
+    
 }
 /*Sobre mi*/
 
