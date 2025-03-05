@@ -115,22 +115,36 @@ nav ul li a:active{
 section{
     min-height: 100vh;
 }
-.tarjeta{
+/*Titulos */
+section h3{
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: #400000;
+}
+
+/*index_experiencia fondo*/
+.experiencia{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/1.png') no-repeat center center/cover;
+}
+/*Index_Tecnologías fondo*/
+.tecnologias{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
+}
+
+/*Index_Habilidades fondo*/
+.habilidades{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/1.png') no-repeat center center/cover;
+}
+/*Contenido de index_habilidades, tecnologías y experiencia*/
+.tecnologias .contenido ul, .habilidades .contenido ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding: 10px;
-    background-color: #ffffffc5;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-}
-.tarjeta p{
-    text-align: justify;
-}
-/*index_experiencia*/
+    align-items: justify;
+    flex-wrap: wrap;
+    gap: 15px;
+} 
 .experiencia, .tecnologias, .habilidades{
-    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -139,40 +153,20 @@ section{
     justify-content: center;
     align-items: center;
 }
-.experiencia h3,.tecnologias h3, .habilidades h3{
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: #400000;
-}
-/*index_tecnologias*/
-.tecnologias{
-    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/1.png') no-repeat center center/cover;
-}
-.tecnologias .contenido ul{
+/*Tarjetas de experiencia tecnologia y habilidades*/
+.tarjeta{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: justify;
-    flex-wrap: wrap;
-    gap: 15px;
-} 
-.tecnologias .contenido ul li, .habilidades .contenido ul li:hover{
-    margin: 10px;
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #400000;
-    transition: all .3s ease-in-out;
+    align-items: center;
+    gap: 25px;
+    padding: 15px;
+    background-color: #ffffffc5;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
-.tecnologias .contenido ul li:hover{
-    transform:translateX(10px);
-}
-/*index_habilidades*/
-.habilidades{
-    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/2.png') no-repeat center center/cover;
-}
-.habilidades .contenido ul li:hover{
-    transform:translateX(10px);
+.tarjeta p{
+    text-align: justify;
+    font-size: 1.0rem;
 }
 /*Sobre mi*/
 
