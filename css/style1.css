@@ -105,14 +105,17 @@ section{
 .contenido{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:repeat(3, 1fr);
+    grid-template-rows:repeat(2, 1fr);
     grid-template-areas:
     'img text'
     'img button';
     gap: 10px;
-    grid-row: 1/3;
+    grid-column: 1/2;
     background-color: #ffffffc5;
-    area
+    grid-template-areas: 
+    'img text'
+    'img button';
+    padding: 20px;
 }
 
 .image{
@@ -129,13 +132,26 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.text h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+.text p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: justify;
+    margin: 10px;
+    padding: 5px;
 }
 .button{
     grid-area: button;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
     background-color: #400000;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -160,6 +176,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+    
 }
 /*seccion 1 footer*/
 .contacto{
@@ -211,6 +228,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
+    padding: 10px;
 }
 .titulo h3{
     font-size: 1.5rem;
