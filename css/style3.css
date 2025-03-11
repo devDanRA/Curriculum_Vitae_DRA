@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif, 'Arial', 'Helvetica', 'sans-serif';
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1,h2,h3,h5{
+    font-weight: 600;
+    color: rgb(96, 17, 17);
+    text-align: center;
+    font-style: italic;
+}
+p{
+    margin: 5px;
+    color: black;
+    font-size: 2.0rem;
+    text-align: center;
+}
+/******************************************************************************
+***********************Cabecera************************************************/
+header{
+    min-height: 40%;
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/home.webp') no-repeat center center/cover;
+    
+}
+.grid_header{
+    min-height: 40%;
+    display: grid;
+    grid-template-columns:1fr;
+}
+/*Barra de navegación*/
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    padding: 5px;
+    margin: 10px;
+    list-style: none;
+}
+nav  ul li a{
+    text-align: justify;
+    text-decoration: none;
+    color:#400000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+nav ul li a:hover{
+    text-decoration:overline;
+}
+nav ul li a:active{
+    text-decoration:overline;
+}
+/*************************************************************************************
+**********************Contenido Enlace3**************Contacto****************************************/
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 1fr;
+}
+
+
+/*************************Footer******************************/
+footer{
+    background: url('../assets/Fondo-floral-de-color-verde-y-rojo/foot.webp') no-repeat center center/cover;
+    min-height: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    
+}
+/*seccion 1 footer*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+    gap: 10px;
+
+}
+.contacto h3, .redes_sociales h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px  #0000006c;
+}
+
+/*seccion 2 footer*/
+.redes_sociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.redes_sociales img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+}
+
+/*seccion 3 footer*/
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+.copy p{
+    color: rgb(33, 33, 33);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/*contenido_footer*/
+.contacto_redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+.titulo h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.content_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+.content_footer p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.content_footer a{
+    text-decoration: none;
+    color: rgb(96, 17, 17);
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+.content_footer a:hover{
+    text-decoration: underline;
+    transform: scale(1.1) translateX(10px);
+}
+.content_img_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px;
+    padding: 3px;
+    gap: 20px;
+    transition: all .3s ease-in-out;
+    padding: 3px;
+}
+.size_img{
+    width: 60px;
+    height: 60px;
+}
+.content_img_footer a:hover{
+    transform: scale(1.2) ;
+}
+
