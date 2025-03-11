@@ -1,4 +1,12 @@
 /*Estilos generales*/
+@font-face{
+    font-family: Satisfy;
+    src: url('../assets/fonts/Satisfy/Satisfy-Regular.ttf');
+}
+@font-face{
+    font-family: Varela_Round;
+    src: url('../assets/fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +14,7 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif, 'Arial', 'Helvetica', 'sans-serif';
+    font-family: 'Varela_Round', 'Arial', 'Helvetica', 'sans-serif';
 }
 body{
     margin: 0;
