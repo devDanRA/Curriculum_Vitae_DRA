@@ -14,69 +14,50 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Varela_Round', 'Arial', 'Helvetica', 'sans-serif';
+    font-family: 'Varela_Round';
 }
 body{
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
 }
-p{
-    margin: 5px;
-    color: black;
-    font-size: 2.0rem;
-    text-align: center;
-}
+
 /******************************************************************************
 ***********************Cabecera************************************************/
 header{
     flex: 1;
-    min-height: 100vh;
+    max-height: 100vh;
     background-color: #015559;
     
 }
 .grid_header{
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns:20% 80%;
-    grid-template-rows: 40% 1fr;
-    grid-template-areas:
-    "logo""nav"
-    "present""present";
-}
-/*Logo*/
-.logo{
-    grid-area: logo;
-}
-.logo h1{
-    width: 100%;
-    height: 100%;
-    font-size: 1rem;
-    color: #BDC2C2;
-}
-/*Barra de navegación*/
-.nav{
-    grid-area: nav;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: blur(5px);
+    justify-content: center;
+
+}
+
+/*Barra de navegación*/
+nav{
+    flex: 1fr;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    backdrop-filter: blur(5px);
     position: fixed;
 }
 nav ul{
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     list-style: none;
 }
 nav ul li{
-    padding: 5px;
-    margin: 5px;
+    padding: 3px;
+    margin: 3px;
     list-style: none;
 }
 nav  ul li a{
@@ -97,24 +78,26 @@ nav ul li a:active{
 .presentacion{
     grid-area: present;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    grid-column: 1 / 3;
 }
 .presentacion h1{
 font-family: satisfy;
 color: #BDC2C2;
 text-align: center;
-margin: 50px;
-padding: 10px;
-font-size: 3rem;
+margin: 5px;
+padding: 5px;
+font-size: 1.5rem;
 }
 
 .presentacion p{
     color: #BDC2C2;
     text-align: justify;
-    margin: 20px;
-    padding: 10px;
-    font-size: 2.5rem;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.3rem;
 }
 
 
