@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'varela';
+    src: url('../assets/fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
+@font-face{
+    font-family: 'satify';
+    src: url('../assets/fonts/Satisfy/Satisfy-Regular.ttf');
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'varela';
+    display: flex;
+    flex-direction: column;
+}
+header, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #31434E;
+}
+/* Barra de navegación*/
+.nav{
+    flex: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    top: 0;
+    background-color: #31434E;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    height: 100%;
+    margin: 10px;
+}
+
+nav ul li{
+    transition: all .2s ease-in-out;
+}
+nav ul li:hover{
+    border: 1px solid #959A9C;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+nav ul li a{
+    text-decoration: none;
+    color: #959A9C;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+    margin: 2px;
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+}
+/*Presentación*/
+.hero{
+    flex: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #959A9C;
+    width: 80%;
+    height: 40%;
+    margin-top: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #000;
+}
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.presentacion h1{
+    font-family: 'satify';
+    font-size: 2rem;
+    color: #31434E;
+    text-align: center;
+    text-shadow: 1px 1px 0.5px #000;
+}
+.presentacion h2{
+    font-size: 1.5rem;
+    color: #31434E;
+    text-align: center;
+    text-shadow: 1px 1px 0.5px #000;
+}
+/*Main- Sobre mi*/
+.flex_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+}
