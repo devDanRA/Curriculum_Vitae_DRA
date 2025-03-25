@@ -68,7 +68,7 @@ nav ul li a{
 nav ul li a:hover{
     transform: scale(1.1);
 }
-nav ul li a:active{
+nav ul li a:current{
     scale: 1;
 }
 /*Presentación*/
