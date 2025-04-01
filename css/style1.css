@@ -20,6 +20,7 @@ body {
     font-family: 'varela';
     display: flex;
     flex-direction: column;
+    background-color: #447E81;
 }
 
 header {
@@ -67,7 +68,7 @@ nav ul li:hover {
 
 nav ul li a {
     text-decoration: none;
-    color: #959A9C;
+    color: #A2AFAF;
     font-size: 1rem;
     font-weight: 600;
     transition: all .2s ease-in-out;
@@ -79,18 +80,19 @@ nav ul li a:hover {
 }
 
 #active{
-    transform:scale(1.3);
-    background-color: #959A9C;
+    transform:scale(1.1);
+    background-color: #BDC2C2;
     border-radius: 5px;
     box-shadow: 0px 1px 1px 1px #000;
 }
 #active a{
-    color: #31434E;
+    color: #015559;
+    margin: 6px;
 }
 
 /*Galería*/
 main {
-    background-color: #31434E;
+    background-color: #447E81;
 }
 
 .galeria {
@@ -103,7 +105,7 @@ main {
 
 .titulo {
     margin: 7%;
-    color: #959A9C;
+    color: #A2AFAF;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
@@ -128,7 +130,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #959A9C;
+    background-color: #BDC2C2;
     padding: 5px;
     border-radius: 10px;
     transition: all .2s ease-in-out;
@@ -155,7 +157,7 @@ main {
 .contenido p {
     margin: 5%;
     font-size: 1.5rem;
-    color: #31434E;
+    color: #015559;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
@@ -163,7 +165,7 @@ main {
 /*Footer*/
 
 footer {
-    background-color: #31434E;
+    background-color: #447E81;
     width: 1fr;
     height: 1fr;
     display: flex;
@@ -186,7 +188,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #959A9C;
+    background-color: #BDC2C2;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -197,14 +199,14 @@ footer {
 .contacto h3,
 .redes_sociales h3 {
     font-size: 1.5rem;
-    color: #31434E;
+    color: #015559;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
 
 .contacto p {
     font-size: 1rem;
-    color: #021A28;
+    color: #015559;
     text-align: justify;
     margin: 15px;
     font-weight: 600;
@@ -212,7 +214,7 @@ footer {
 
 .contacto a {
     text-decoration: none;
-    color: #31434E;
+    color: #015559;
     font-size: 1rem;
     font-weight: 600;
     transition: all .2s ease-in-out;
@@ -221,7 +223,7 @@ footer {
 
 .contacto a:hover {
     transform: scale(1.1);
-    color: #021A28;
+    color: #015559;
 }
 
 .redes_sociales a {
@@ -239,7 +241,7 @@ footer {
 .content_img_footer img {
     width: 70px;
     height: 70px;
-    color: #7F878C;
+    color: #A2AFAF;
     padding: 10px;
     border-radius: 30%;
     box-shadow: 1px 1px 5px #000;
@@ -256,7 +258,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #959A9C;
+    color: #A2AFAF;
     font-size: .7rem;
     font-weight: 600;
     padding: 10px;
@@ -306,7 +308,7 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        background-color: #959A9C;
+        background-color: #BDC2C2;
         padding: 5px;
         border-radius: 10px;
     }
@@ -329,7 +331,7 @@ footer {
     .contenido p {
         margin: 5%;
         font-size: 1.5rem;
-        color: #31434E;
+        color: #015559;
         text-align: center;
         text-shadow: 1px 1px 0.5px #000;
     }

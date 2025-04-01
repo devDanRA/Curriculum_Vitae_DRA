@@ -1,33 +1,38 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-@font-face{
+
+@font-face {
     font-family: 'varela';
     src: url('../assets/fonts/Varela_Round/VarelaRound-Regular.ttf');
 }
-@font-face{
+
+@font-face {
     font-family: 'satify';
     src: url('../assets/fonts/Satisfy/Satisfy-Regular.ttf');
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'varela';
     display: flex;
     flex-direction: column;
+    background-color: #447E81;
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-color: #31434E;
+    background-color: #447E81;
 }
 
 /* Barra de navegación*/
-.nav{
+.nav {
     flex: 1fr;
     display: flex;
     justify-content: center;
@@ -36,9 +41,10 @@ header{
     height: 20%;
     position: fixed;
     top: 0;
-    background-color: #31434E;
+    background-color: #447E81;
 }
-nav ul{
+
+nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,36 +55,48 @@ nav ul{
     margin: 10px;
 }
 
-nav ul li{
+nav ul li {
     transition: all .2s ease-in-out;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     border: 1px solid #959A9C;
     border-radius: 5px;
     transform: scale(1.1);
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    color: #959A9C;
+    color: #A2AFAF;
     font-size: 1rem;
     font-weight: 600;
     transition: all .2s ease-in-out;
     margin: 2px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     transform: scale(1.1);
 }
-nav ul li a:current{
-    scale: 1;
+
+#active{
+    transform:scale(1.1);
+    background-color: #BDC2C2;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 1px #000;
 }
+#active a{
+    color: #015559;
+    margin: 6px;
+}
+
 /*Presentación*/
-.hero{
+.hero {
     flex: 1fr;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #959A9C;
+    background-color: #BDC2C2;
     width: 80%;
     height: 40%;
     margin-top: 70%;
@@ -86,45 +104,53 @@ nav ul li a:current{
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
 }
-.presentacion{
+
+.presentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
-.presentacion h1{
+
+.presentacion h1 {
     font-family: 'satify';
     font-size: 2rem;
-    color: #31434E;
+    color: #015559;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
-.presentacion h2{
+
+.presentacion h2 {
     font-size: 1.5rem;
-    color: #31434E;
+    color: #015559;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
+
 /*Main- Sobre mi*/
-.flex_main{
+.flex_main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-color: #31434E;
-        
+    background-color: #447E81;
+    gap: 30px;
+
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 100vh;
+    height: 1fr;
+    margin: 30px auto;
 }
-.sobre_mi{
+
+.sobre_mi {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,157 +158,184 @@ section{
     gap: 2rem;
     margin: 0 auto;
 }
-.sobre_mi h2{
+
+.sobre_mi h2 {
     font-size: 2rem;
-    color: #959A9C;
+    color: #A2AFAF;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
-.tarjeta{
+
+.tarjeta {
     display: flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 2rem;
 }
-.tarjeta img{
+
+.tarjeta img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     box-shadow: 1px 1px 5px #000;
     object-fit: cover;
 }
-.contenido{
+
+.contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #959A9C;
+    background-color: #BDC2C2;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
     width: 100%;
     height: 100%;
 }
-.contenido p{
+
+.contenido p {
     font-size: 1rem;
-    color: #31434E;
+    color: #015559;
     text-align: justify;
     margin: 15px;
 }
+
 /*Habilidades, logros y objetivos*/
-.habilidades, .logros, .objetivos{
+.habilidades,
+.logros,
+.objetivos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem;
 }
-.habilidades h2, .logros h2, .objetivos h2{
+
+.habilidades h2,
+.logros h2,
+.objetivos h2 {
     font-size: 2rem;
-    color: #959A9C;
+    color: #A2AFAF;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
-.contenido li{
+
+.contenido li {
     font-size: 1rem;
-    color: #31434E;
+    color: #015559;
     text-align: justify;
     margin: 15px;
 }
+
 /*Footer*/
 
-footer{
-    background-color:#31434E;
+footer {
+    background-color: #447E81;
     width: 1fr;
     height: 1fr;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
-.contacto_redes{
+
+.contacto_redes {
     display: flex;
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
     gap: 1rem;
-    
+
 }
-.contacto, .redes_sociales{
+
+.contacto,
+.redes_sociales {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: #959A9C;
+    background-color: #BDC2C2;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
     width: 1fr;
 }
-.contacto h3, .redes_sociales h3{
+
+.contacto h3,
+.redes_sociales h3 {
     font-size: 1.5rem;
-    color: #31434E;
+    color: #447E81;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
-.contacto p{
+
+.contacto p {
     font-size: 1rem;
-    color: #021A28;
+    color: #015559;
     text-align: justify;
     margin: 15px;
     font-weight: 600;
 }
-.contacto a{
+
+.contacto a {
     text-decoration: none;
-    color: #31434E;
+    color: #015559;
     font-size: 1rem;
     font-weight: 600;
     transition: all .2s ease-in-out;
     margin: 2px;
 }
-.contacto a:hover{
+
+.contacto a:hover {
     transform: scale(1.1);
-    color: #021A28;
+    color: #015559;
 }
-.redes_sociales a{
+
+.redes_sociales a {
     text-decoration: none;
 }
 
-.content_img_footer{
+.content_img_footer {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     padding: 10px;
 }
-.content_img_footer img{
+
+.content_img_footer img {
     width: 70px;
     height: 70px;
-    color: #7F878C;
+    color: #A2AFAF;
     padding: 10px;
     border-radius: 30%;
     box-shadow: 1px 1px 5px #000;
     object-fit: cover;
 }
-.redes_sociales img:hover{
+
+.redes_sociales img:hover {
     transform: scale(0.9);
     border-radius: 30%;
     box-shadow: 0px 1px 1px 1px #000;
 }
-.copy{
+
+.copy {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #959A9C;
+    color: #A2AFAF;
     font-size: .7rem;
     font-weight: 600;
     padding: 10px;
 }
 
-@media screen and (min-width: 768px){
-   /* Barra de navegación*/ 
-    nav ul{
+@media screen and (min-width: 768px) {
+
+    /* Barra de navegación*/
+    nav ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -292,30 +345,33 @@ footer{
         height: 100%;
         margin: 10px;
     }
+
     /*Presentación*/
-    .hero{
+    .hero {
         margin-top: 15%;
     }
-    
-/*Main- Sobre mi*/
-    
-section{
-    width: 60%;
-}
 
-.tarjeta img{
-    width: 200px;
-    height: 200px;
+    /*Main- Sobre mi*/
+
+    section {
+        width: 60%;
     }
-    
-}
-/*footer*/
-.contacto_redes{
-    width: 1fr;
-    margin: 0 auto;
-}
-.content_img_footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    .tarjeta img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /*footer*/
+    .contacto_redes {
+        flex-direction: row;
+        width: 1fr;
+        margin: 0 auto;
+    }
+
+    .content_img_footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
