@@ -172,11 +172,11 @@ label{
     width: 100%;
     height: 100px;
     border-radius: 5px;
-    border: 1px solid rgb(96, 17, 17);
+    border: 1px solid #015559;
     padding: 5px;
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(96, 17, 17);
+    color: #015559;
 }
 .button{
     display: flex;
@@ -189,21 +189,17 @@ label{
 
 .button input{
     width: 100%;
-    height: 30px;
+    height: 100%;
     border-radius: 5px;
-    border: 1px solid rgb(96, 17, 17);
-    padding: 5px;
+    border: 1px solid #015559;
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(96, 17, 17);
-    background: rgb(96, 17, 17);
     color: white;
+    margin: 10px;
+    padding: 5px;
+    background: #447E81;
     cursor: pointer;
     transition: all .3s ease-in-out;
-}
-.button input:hover{
-    background: white;
-    color: rgb(96, 17, 17);
 }
 .terms, .privacy{
     display: flex;
@@ -221,7 +217,7 @@ label{
 .terms label, .privacy label{
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(96, 17, 17);
+    color: #015559;
 }
 
 /*************************Footer******************************/
@@ -231,6 +227,7 @@ footer {
     height: 1fr;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .contacto_redes {
@@ -340,7 +337,18 @@ footer {
     }
 
     /*Main-Form*/
-
+    section{
+        margin-top: 10%;
+    }
+    form{
+        width: 60%;
+    }
+    .name input, .lastname input, .email input, .phone_numb input{
+        width: 50%;
+    }
+    .service select{
+        width: auto;
+    }
     /*footer*/
     .contacto_redes {
         flex-direction: row;

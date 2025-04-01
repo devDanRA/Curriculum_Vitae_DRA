@@ -170,6 +170,7 @@ footer {
     height: 1fr;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .contacto_redes {
