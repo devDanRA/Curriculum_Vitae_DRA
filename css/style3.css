@@ -95,13 +95,10 @@ nav ul li a:hover {
 
 main{
     background-color: #447E81;
-}
-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;  
     margin-top: 50%;
 }
 .titulo{
@@ -112,18 +109,12 @@ section{
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
 }
-.map{
-    width: 250px;
-    height: 250px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px #000;
-}
-.map iframe{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px #000;
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
 }
 /*************************Footer******************************/
 footer {
