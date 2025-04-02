@@ -30,107 +30,132 @@ header {
     background-color: #447E81;
 }
 
-/* Barra de navegación*/
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20%;
+/*Menú de navegación*/
+.menu_icon img {
+    z-index: 1;
     position: fixed;
     top: 0;
-    background-color: #447E81;
-    z-index: 1;
+    left: 0;
+    margin: 10px;
+    cursor: pointer;
+    display: block;
 }
 
+#menu {
+    display: none;
+}
+
+#menu:checked+label+nav {
+    display: block;
+}
+
+/*Barra de navegación*/
+nav {
+    display: none;
+    align-items: center;
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
 
 nav ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
     list-style: none;
     height: 100%;
-    margin: 10px;
+    background-color: #BDC2C2;
+    border-radius: 5px;
 }
 
 nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     transition: all .2s ease-in-out;
 }
 
-nav ul li:hover {
-    border: 1px solid #959A9C;
-    border-radius: 5px;
-    transform: scale(1.1);
-}
 
 nav ul li a {
     text-decoration: none;
-    color: #A2AFAF;
+    color: #447E81;
     font-size: 1rem;
     font-weight: 600;
     transition: all .2s ease-in-out;
     margin: 2px;
 }
 
-nav ul li a:hover {
-    transform: scale(1.1);
+nav ul li:hover {
+    border: #447E81 1px solid;
+    border-radius: 5px;
 }
 
-#active{
-    transform:scale(1.1);
+#active {
+    transform: scale(1.1);
     background-color: #BDC2C2;
     border-radius: 5px;
     box-shadow: 0px 1px 1px 1px #000;
 }
-#active a{
+
+#active a {
     color: #015559;
     margin: 6px;
 }
 
-/*************************************************************************************
-**********************Contenido Enlace2**************Formulario****************************************/
 
-main{
+/*************************************************************************************
+**********************Formulario****************************************/
+
+main {
     background-color: #447E81;
 }
-section{
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;  
-    margin-top: 40%;
+    gap: 20px;
 }
-.titulo{
+
+.titulo {
     margin: 7%;
     color: #A2AFAF;
     font-size: 2rem;
     font-weight: 600;
     text-align: center;
     text-shadow: 1px 1px 0.5px #000;
-}   
-form{
+}
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin:5px;
-    width: 80%;
+    margin: 5px;
+    width: 70%;
     padding: 3px;
     border-radius: 10px;
     background: #BDC2C2;
     box-shadow: 0 0 10px 2px #0000006c;
 }
 
-label{
+label {
     font-size: 1.5rem;
     font-weight: 500;
     color: #015559;
 }
-.name,.lastname, .email, .phone_numb, .service{
+
+.name,
+.lastname,
+.email,
+.phone_numb,
+.service {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +163,11 @@ label{
     margin: 10px;
     padding: 5px;
 }
-.name input, .lastname input, .email input, .phone_numb input{
+
+.name input,
+.lastname input,
+.email input,
+.phone_numb input {
     width: 100%;
     height: 30px;
     border-radius: 5px;
@@ -148,7 +177,8 @@ label{
     font-weight: 500;
     color: #015559;
 }
-.service select{
+
+.service select {
     width: 50%;
     height: 10%;
     border-radius: 5px;
@@ -158,7 +188,8 @@ label{
     font-weight: 500;
     color: #015559;
 }
-.message{
+
+.message {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,7 +198,8 @@ label{
     margin: 10px;
     padding: 5px;
 }
-.message textarea{
+
+.message textarea {
     width: 100%;
     height: 100px;
     border-radius: 5px;
@@ -177,7 +209,8 @@ label{
     font-weight: 500;
     color: #015559;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -186,7 +219,7 @@ label{
     padding: 5px;
 }
 
-.button input{
+.button input {
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -200,7 +233,9 @@ label{
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-.terms, .privacy{
+
+.terms,
+.privacy {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,12 +243,16 @@ label{
     margin: 3px;
     padding: 3px;
 }
-.terms input, .privacy input{
+
+.terms input,
+.privacy input {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
-.terms label, .privacy label{
+
+.terms label,
+.privacy label {
     font-size: 1.5rem;
     font-weight: 500;
     color: #015559;
@@ -320,31 +359,60 @@ footer {
 
 @media screen and (min-width: 768px) {
 
-    /* Barra de navegación*/
+    /*Menú de navegación*/
+    .menu_icon img {
+        display: none;
+    }
+
+    #menu:checked+label+nav {
+        display: none;
+    }
+
+    /*Barra de navegación*/
+    nav {
+        display: block;
+        align-items: center;
+        width: 100%;
+        border-radius: 0;
+        position: fixed;
+        top: 0;
+        z-index: 3;
+    }
+
     nav ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        list-style: none;
-        height: 100%;
-        margin: 10px;
+        height: 30%;
+        border-radius: 0;
+    }
+
+    #active {
+        transform: scale(1.1);
+        background-color: #447E81;
+        border-radius: 5px;
+        box-shadow: 0px 0px 0px 0px #000;
+    }
+
+    #active a {
+        color: #A2AFAF;
     }
 
     /*Main-Form*/
-    section{
-        margin-top: 10%;
-    }
-    form{
+    form {
         width: 60%;
     }
-    .name input, .lastname input, .email input, .phone_numb input{
+
+    .name input,
+    .lastname input,
+    .email input,
+    .phone_numb input {
         width: 50%;
     }
-    .service select{
+
+    .service select {
         width: auto;
     }
+
     /*footer*/
     .contacto_redes {
         flex-direction: row;
