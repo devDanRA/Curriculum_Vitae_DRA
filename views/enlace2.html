@@ -31,10 +31,12 @@
             </ul>
         </nav>
     </header>
-    <!-- Main -->
+    <!--Contenido Principal-->
     <main>
         <section>
             <h1 class="titulo">Presupuesto</h1>
+            <!--Formulario-->
+            <h2>Si deseas un presupuesto personalizado, por favor completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</h2>   
             <form>
                 <div class="name">
                     <label for="name">Nombre: </label>
@@ -46,7 +48,7 @@
                 </div>
                 <div class="phone_numb">
                     <label for="phone">Teléfono: </label>
-                    <input type="tel" id="phone" name="phone" required>
+                    <input type="tel" pattern="\d{9,10}" id="phone" name="phone" required>
                 </div>
                 <div class="email">
                     <label for="email">Correo: </label>
