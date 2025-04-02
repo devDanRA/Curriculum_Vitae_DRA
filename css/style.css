@@ -33,7 +33,7 @@ header {
 
 /* Barra de navegación*/
 .nav {
-    flex: 1fr;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,6 @@ nav ul li a:hover {
 
 /*Presentación*/
 .hero {
-    flex: 1fr;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,7 +145,6 @@ section {
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 1fr;
     margin: 30px auto;
 }
 
@@ -233,8 +231,6 @@ section {
 
 footer {
     background-color: #447E81;
-    width: 1fr;
-    height: 1fr;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -243,8 +239,8 @@ footer {
 .contacto_redes {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
 
 }
@@ -261,7 +257,6 @@ footer {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
-    width: 1fr;
 }
 
 .contacto h3,
@@ -349,12 +344,13 @@ footer {
     /*Presentación*/
     .hero {
         margin-top: 15%;
+        width: 60%;
     }
 
     /*Main- Sobre mi*/
 
     section {
-        width: 60%;
+        width: 50%;
     }
 
     .tarjeta img {
@@ -365,7 +361,6 @@ footer {
     /*footer*/
     .contacto_redes {
         flex-direction: row;
-        width: 1fr;
         margin: 0 auto;
     }
 
@@ -373,4 +368,5 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-  
+    }
+}

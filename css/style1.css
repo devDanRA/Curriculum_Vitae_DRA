@@ -27,7 +27,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 1fr;
     background-color: #447E81;
 }
 
@@ -140,7 +139,7 @@ main {
     box-shadow: 0px 1px 1px 1px #000;
 }
 .img {
-    flex: 1fr;
+    flex: 1;
     margin: 1rem;
     width: 180px;
     height: 180px;
@@ -166,8 +165,6 @@ main {
 
 footer {
     background-color: #447E81;
-    width: 1fr;
-    height: 1fr;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -176,8 +173,8 @@ footer {
 .contacto_redes {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     gap: 1rem;
 
 }
@@ -194,7 +191,6 @@ footer {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 5px #000;
-    width: 1fr;
 }
 
 .contacto h3,
@@ -315,7 +311,6 @@ footer {
     }
 
     .img {
-        flex: 1fr;
         margin: 1rem;
         width: 180px;
         height: 180px;
@@ -350,7 +345,6 @@ footer {
     .contacto_redes {
         flex-direction: row;
         gap: 3rem;
-        width: 1fr;
         margin: 0 auto;
     }
 
