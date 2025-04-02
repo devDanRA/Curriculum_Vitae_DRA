@@ -146,7 +146,7 @@ nav ul li:hover {
     text-shadow: 1px 1px 0.5px #000;
 }
 
-/*Main- Sobre mi*/
+/*Sobre mi*/
 .flex_main {
     display: flex;
     flex-direction: column;
@@ -346,6 +346,7 @@ footer {
     padding: 10px;
 }
 
+/*Adaptacion a pantallas de mas de 768px de largo*/
 @media screen and (min-width: 768px) {
 
     /*Menú de navegación*/
@@ -391,7 +392,7 @@ footer {
         width: 60%;
     }
 
-    /*Main- Sobre mi*/
+    /*Sobre mi*/
 
     section {
         width: 50%;

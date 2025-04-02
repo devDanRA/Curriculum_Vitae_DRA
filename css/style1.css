@@ -94,6 +94,7 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
+/*Mantener enlace  abierto con un estilo*/
 #active {
     transform: scale(1.1);
     background-color: #BDC2C2;
@@ -279,6 +280,7 @@ footer {
     padding: 10px;
 }
 
+/*Adaptacion a pantallas de mas de 768px de largo*/
 @media screen and (min-width: 768px) {
 
     /*Menú de navegación*/
@@ -319,7 +321,7 @@ footer {
         color: #A2AFAF;
     }
 
-    /*Main-Galeria*/
+    /*Galeria*/
 
     main {
         display: flex;

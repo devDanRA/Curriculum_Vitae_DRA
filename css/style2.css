@@ -107,8 +107,7 @@ nav ul li:hover {
 }
 
 
-/*************************************************************************************
-**********************Formulario****************************************/
+/*Formulario*/
 
 main {
     background-color: #447E81;
@@ -267,7 +266,7 @@ label {
     color: #015559;
 }
 
-/*************************Footer******************************/
+/*Footer*/
 footer {
     background-color: #447E81;
     display: flex;
@@ -366,6 +365,7 @@ footer {
     padding: 10px;
 }
 
+/*Adaptacion a pantallas de mas de 768px de largo*/
 @media screen and (min-width: 768px) {
 
     /*Menú de navegación*/
@@ -406,7 +406,7 @@ footer {
         color: #A2AFAF;
     }
 
-    /*Main-Form*/
+    /*Form*/
     form {
         width: 60%;
     }
